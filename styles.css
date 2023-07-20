@@ -1,0 +1,300 @@
+body {
+  background-color: #000;
+  background-image: url(images/bg1.jpg);
+}
+
+h1 {
+  font-family: "Instrument Sans", sans-serif;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+.sun {
+  background-image: url(images/sun3.png);
+  background-size: cover;
+  /* background-color: #ffdf00; */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mercury-outline {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mercury {
+  width: 20px;
+  height: 20px;
+  background-image: url(images/Mercury.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 43%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  /* background-color: #b6b6b6; */
+  animation: orbit-mercury 2s linear infinite;
+}
+
+@keyframes orbit-mercury {
+  from {
+    transform: rotate(0deg) translateX(70px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(70px) rotate(-360deg);
+  }
+}
+
+/* .mercury-outline,
+.venus-outline,
+.earth-outline,
+.mars-outline,
+.jupiter-outline,
+.saturn-outline,
+.uranus-outline,
+.neptune-outline {
+  border-radius: 50%;
+  border: 1px dotted red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.venus-outline {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.venus {
+  width: 40px;
+  height: 40px;
+  background-image: url(images/Venus.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  /* background-color: red; */
+  animation: orbit-venus 10s linear infinite;
+}
+
+@keyframes orbit-venus {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+.earth-outline {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.earth {
+  width: 50px;
+  height: 50px;
+  background-image: url(images/earth.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 44%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  /* background-color: red; */
+  animation: orbit-earth 20s linear infinite;
+}
+
+@keyframes orbit-earth {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+.mars-outline {
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mars {
+  width: 30px;
+  height: 30px;
+  background-image: url(images/Mars.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 46.5%;
+  left: 46.5%;
+  transform: translate(-50%, -50%);
+  background-color: green;
+  animation: orbit-mars 30s linear infinite;
+}
+
+@keyframes orbit-mars {
+  from {
+    transform: rotate(0deg) translateX(185px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(185px) rotate(-360deg);
+  }
+}
+
+.jupiter-outline {
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jupiter {
+  width: 40px;
+  height: 40px;
+  background-image: url(images/Jupiter.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  /* background-color: pink; */
+  animation: orbit-jupiter 60s linear infinite;
+}
+
+@keyframes orbit-jupiter {
+  from {
+    transform: rotate(0deg) translateX(217px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(217px) rotate(-360deg);
+  }
+}
+
+.saturn-outline {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.saturn {
+  width: 50px;
+  height: 50px;
+  background-image: url(images/Saturn1.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  /* background-color: purple; */
+  animation: orbit-saturn 90s linear infinite;
+}
+
+@keyframes orbit-saturn {
+  from {
+    transform: rotate(0deg) translateX(250px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(250px) rotate(-360deg);
+  }
+}
+.uranus-outline {
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.uranus {
+  width: 30px;
+  height: 30px;
+  background-image: url(images/uranus.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  /* background-color: maroon; */
+  animation: orbit-uranus 200s linear infinite;
+}
+
+@keyframes orbit-uranus {
+  from {
+    transform: rotate(0deg) translateX(280px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(280px) rotate(-360deg);
+  }
+}
+.neptune-outline {
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.neptune {
+  width: 30px;
+  height: 30px;
+  background-image: url(images/neptune1.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  /* background-color: sienna; */
+  animation: orbit-neptune 400s linear infinite;
+}
+
+@keyframes orbit-neptune {
+  from {
+    transform: rotate(0deg) translateX(310px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(310px) rotate(-360deg);
+  }
+}
